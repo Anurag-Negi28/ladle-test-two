@@ -56,26 +56,25 @@ hr {
 }
 
 .card button {
-  color: #fff;
+  color: #000000;
   padding: 2% 3%;
   border-radius: 10px;
-  background: linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+  background: linear-gradient(90deg, #d4d4d4  0%, #d4d4d4 1%, #d4d4d4 100%);
 }
 
 .card:nth-child(1) {
-  background: linear-gradient(180deg,
-      rgba(255, 79, 79, 0.75) 12.15%,
-      rgba(255, 166, 33, 0.75) 61.63%,
-      rgba(255, 231, 17, 0.75) 100%);
+  background: 
+      rgba(0, 195, 255, 0.75) 
 }
 
 .card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(0, 138, 182, 0.75) 4.86%, rgba(166, 223, 255, 0.75) 100%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: 
+      rgba(0, 195, 255, 0.75) 
 }
 
 .card:nth-child(3) {
-  background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+  background: 
+      rgba(0, 195, 255, 0.75) 
 }
 
 .cardlink {

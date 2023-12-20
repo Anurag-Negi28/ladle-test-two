@@ -11,15 +11,14 @@ function Landing() {
             <Navbar />
             <div className='main-landing'>
                 <div className="landing">
-                    Techconnect
+                Ladle Tracking System
                     <hr />
                 </div>
                 <div id='cardlist'>
-                    <Card title='Chapter' content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum labore laborum omnis, 
-                    quo consequuntur ullam ea saepe voluptate voluptates sed officiis temporibus fuga deserunt! Laboriosam perspiciatis ut dolorum at?'
+                    <Card title='Ladle Health' content='98%'
                         link='/chapters' />
-                    <Card title='Blog' content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum labore laborum omnis, quo consequuntur ullam ea saepe voluptate voluptates sed officiis temporibus fuga deserunt! Laboriosam perspiciatis ut dolorum at?' />
-                    <Card title='Opportunities' content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum labore laborum omnis, quo consequuntur ullam ea saepe voluptate voluptates sed officiis temporibus fuga deserunt! Laboriosam perspiciatis ut dolorum at?' />
+                    <Card title='TLC Pit Area' content='Ladle 3 reached' />
+                    <Card title='Converter' content='Ladle 4 reached' />
                 </div>
             </div>
             <Footer />

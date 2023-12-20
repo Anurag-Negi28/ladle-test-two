@@ -24,7 +24,7 @@
     height: 66%;
     width: 45%;
     border-radius: 30px;
-    background: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+    background: linear-gradient(90deg, #2957ee 0%, #3442ff 99%, #888483 100%);
 }
 
 .login-title {
@@ -66,7 +66,7 @@
     width: 60%;
     height: 35px;
     border-radius: 5px;
-    background: #985ACE;
+    background: #ffdd45;
     color: white;
     border: none;
 }
