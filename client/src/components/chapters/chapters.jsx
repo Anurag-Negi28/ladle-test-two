@@ -13,7 +13,7 @@ export default function Chapters() {
             
             <div className="chapters-heading mt-5">
                 <div>
-                    <h1 className="head-text">Chapters & Clubs</h1>
+                    <h1 className="head-text">TLC Pit Area</h1>
                 </div>
             </div>
 
