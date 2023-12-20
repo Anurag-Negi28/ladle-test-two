@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { LanguageContextProvider } from "./LanguageContext";
+import "./i18n";
+import LanguageSelect from "./components/LanguageSelet";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <LanguageContextProvider>
+      <LanguageSelect/>
+      <App />
+    </LanguageContextProvider>
   </React.StrictMode>
 );
 
