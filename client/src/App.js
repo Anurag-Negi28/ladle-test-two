@@ -8,6 +8,7 @@ import Login from './components/login/login';
 import Chapters from './components/chapters/chapters';
 import Blogs from './components/blogs/blogs';
 import Opportunities from './components/opportunities/opportunities';
+import AnomalyAlert from './components/AnomalyAlert';
 
 function AnomalyDetection() {
     const [anomalyDetected, setAnomalyDetected] = useState(false);
