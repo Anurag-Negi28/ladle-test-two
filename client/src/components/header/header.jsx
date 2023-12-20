@@ -16,17 +16,17 @@ export default function Header(props) {
                     <div className="links-box row">
                         <div className={chaptersBoxClass}>
                             <div className='link-box px-3'>
-                                <a href="/chapters" className='link'>Chapters</a>
+                                <a href="/chapters" className='link'>LLadle Health</a>
                             </div>
                         </div>
                         <div className={blogsBoxClass}>
                             <div className='link-box px-3'>
-                                <a href="/blogs" className='link'>Blogs</a>
+                                <a href="/blogs" className='link'>TLC Pit area</a>
                             </div>
                         </div>
                         <div className={oppsBoxClass}>
                             <div className='link-box px-3'>
-                                <a href="/opportunities" className='link'>Opportunities</a>
+                                <a href="/opportunities" className='link'>Converter</a>
                             </div>
                         </div>
                     </div>
