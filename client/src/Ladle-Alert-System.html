@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladle Monitoring System</title>
+    <style>
+        /* Styles remain the same as in the previous example */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="ladleContainer">
+        <h2>Ladle Damp Check</h2>
+        <label for="ladleStatus">Ladle Status:</label>
+        <input type="text" id="ladleStatus" placeholder="Enter Ladle Status (e.g., damp or wet)">
+        <br>
+        <button onclick="checkLadle()">Check Ladle</button>
+    </div>
+
+    <div class="container" id="turnaroundContainer">
+        <h2>Turnaround Time Check</h2>
+        <label for="arrivalTime">Arrival Time:</label>
+        <input type="time" id="arrivalTime">
+        <br>
+        <button onclick="checkTurnaround()">Check Turnaround</button>
+    </div>
+
+    <script>
+        function checkLadle() {
+            const ladleStatus = document.getElementById('ladleStatus').value.toLowerCase();
+
+            if (ladleStatus === 'damp' || ladleStatus === 'wet') {
+                alert('Ladle is damp or wet! Take necessary actions.');
+            }
+        }
+
+        function checkTurnaround() {
+            const arrivalTime = document.getElementById('arrivalTime').value;
+            const currentTime = new Date();
+            const arrivalTimestamp = new Date(`2000-01-01 ${arrivalTime}:00`).getTime();
+            const currentTimestamp = currentTime.getTime();
+            const minutesDifference = (currentTimestamp - arrivalTimestamp) / (1000 * 60);
+
+            if (minutesDifference >= 47) {
+                alert('Turnaround time delay detected! Take necessary actions.');
+            }
+        }
+    </script>
+</body>
+</html>
