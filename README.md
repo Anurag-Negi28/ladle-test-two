@@ -1,1 +1,1 @@
-# TechConnect-2.0
+# Real Time Ladle Tracking and Management System (Frontend Part)
